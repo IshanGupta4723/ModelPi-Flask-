@@ -125,7 +125,7 @@ html,body {
     top:15%;
     left:80%;
     right:5%;
-    bottom:50%;
+    bottom:15%;
     background-color:#000000;
     border-radius:1vw;
     color:#888a0f;
@@ -139,7 +139,7 @@ html,body {
     top:15%;
     left:80%;
     right:5%;
-    bottom:50%;
+    bottom:15%;
     background-color:#212121;
     border-radius:1vw;
     color:#fff700;
@@ -147,59 +147,7 @@ html,body {
     font-size:1.5vw;
   }
 
-  .auto {
-    position:absolute;
-    top:52.5%;
-    left:80%;
-    right:5%;
-    bottom:12.5%;
-    background-color:#000000;
-    border-radius:1vw;
-    color:#888a0f;
-    border:none;
-    transition:0.5s;
-    font-size:1.25vw;
-  }
-  
-  .auto:hover {
-    position:absolute;
-    top:52.5%;
-    left:80%;
-    right:5%;
-    bottom:12.5%;
-    background-color:#212121;
-    border-radius:1vw;
-    color:#fff700;
-    border:none;
-    font-size:1.5vw;
-  }
 
-.park_hold {
-    position:absolute;
-    top:15%;
-    left:70%;
-    right:22.5%;
-    bottom:12.5%;
-    background-color:#000000;
-    border-radius:1vw;
-    color:#7b0f0f;
-    border:none;
-    transition:0.5s;
-    font-size:1.25vw;
-  }
-  
-  .park_hold:hover {
-    position:absolute;
-    top:15%;
-    left:70%;
-    right:22.5%;
-    bottom:12.5%;
-    background-color:#212121;
-    border-radius:1vw;
-    color:#ff0000;
-    border:none;
-    font-size:1.5vw;
-  }
 
   .N {
     position:absolute;
@@ -283,3 +231,73 @@ html,body {
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
   }
+
+.Title{
+  position:absolute;
+    top:15%;
+    left:30%;
+    right:30%;
+    bottom:70%;
+    text-align: center;
+    background-color:#000000;
+    color:#f9f9f9;
+    border:none;
+    font-size:1.5vw;
+    border-radius: .5vw;
+    font-family: 'Calibri Light'
+}
+
+.Horn {
+  position:absolute;
+  top:40%;
+  left:30%;
+  right:52.5%;
+  bottom:20%;
+  background-color:#000000;
+  color:#ffffff;
+  border:none;
+  transition:0.5s;
+  font-size:1.25vw;
+  border-radius: 1vw;
+}
+
+.Horn:hover {
+  position:absolute;
+  top:40%;
+  left:30%;
+  right:52.5%;
+  bottom:20%;
+  background-color:#202020;
+  color:#ffffff;
+  border:none;
+  transition:0.5s;
+  font-size:1.25vw;
+  border-radius: 1vw;
+}
+.light {
+  position:absolute;
+  top:40%;
+  left:52.5%;
+  right:30%;
+  bottom:20%;
+  background-color:#000000;
+  color:#ffffff;
+  border:none;
+  transition:0.5s;
+  font-size:1.25vw;
+  border-radius: 1vw;
+}
+
+.light:hover {
+  position:absolute;
+  top:40%;
+  left:52.5%;
+  right:30%;
+  bottom:20%;
+  background-color:#202020;
+  color:#ffffff;
+  border:none;
+  transition:0.5s;
+  font-size:1.25vw;
+  border-radius: 1vw;
+}

@@ -1,0 +1,285 @@
+html,body {
+    background: url('background.png') no-repeat;
+    /* Keep the inherited background full size. */
+    background-attachment: fixed; 
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .glass{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: fixed;
+    left:10%;
+    right:10%;
+    top:60%;
+    bottom:5%;
+    z-index: 1;
+    background: black;
+    opacity:0.5;
+    overflow: hidden;
+  }
+  
+  .glass:before {
+    content: "";
+    position: absolute;
+    background: black;
+    opacity:0.5;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(2vw);
+    margin: -20px;
+    opacity:0.8;
+  }
+  
+  .Sport {
+    position:absolute;
+    top:10%;
+    left:2.5%;
+    right:90%;
+    bottom:70%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#7b0909;
+    border: none;
+    transition:0.5s;
+    font-size:1vw;
+  }
+  
+  .Sport:hover {
+    position:absolute;
+    top:10%;
+    left:2.5%;
+    right:90%;
+    bottom:70%;
+    background-color:#141313;
+    border-radius:1vw;
+    color:#ff0000;
+    border: none;
+    font-size:1.25vw;
+  }
+  
+  .Normal {
+    position:absolute;
+    top:35%;
+    left:2.5%;
+    right:90%;
+    bottom:45%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#094a7b;
+    border: none;
+    transition:0.5s;
+    font-size:1vw;
+  }
+  
+  .Normal:hover {
+    position:absolute;
+    top:35%;
+    left:2.5%;
+    right:90%;
+    bottom:45%;
+    background-color:#212121;
+    border-radius:1vw;
+    color:#00d5ff;
+    border: none;
+    font-size:1.25vw;
+  }
+  
+  .Eco {
+    position:absolute;
+    top:60%;
+    left:2.5%;
+    right:90%;
+    bottom:20%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#0d7d29;
+    border: none;
+    transition:0.5s;
+    font-size:1vw;
+  }
+  
+  .Eco:hover {
+    position:absolute;
+    top:60%;
+    left:2.5%;
+    right:90%;
+    bottom:20%;
+    background-color:#212121;
+    border-radius:1vw;
+    color:#00ff04;
+    border: none;
+    font-size:1.25vw;
+  }
+  
+  .cruise {
+    position:absolute;
+    top:15%;
+    left:80%;
+    right:5%;
+    bottom:50%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#888a0f;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+  }
+  
+  .cruise:hover {
+    position:absolute;
+    top:15%;
+    left:80%;
+    right:5%;
+    bottom:50%;
+    background-color:#212121;
+    border-radius:1vw;
+    color:#fff700;
+    border:none;
+    font-size:1.5vw;
+  }
+
+  .auto {
+    position:absolute;
+    top:52.5%;
+    left:80%;
+    right:5%;
+    bottom:12.5%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#888a0f;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+  }
+  
+  .auto:hover {
+    position:absolute;
+    top:52.5%;
+    left:80%;
+    right:5%;
+    bottom:12.5%;
+    background-color:#212121;
+    border-radius:1vw;
+    color:#fff700;
+    border:none;
+    font-size:1.5vw;
+  }
+
+.park_hold {
+    position:absolute;
+    top:15%;
+    left:70%;
+    right:22.5%;
+    bottom:12.5%;
+    background-color:#000000;
+    border-radius:1vw;
+    color:#7b0f0f;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+  }
+  
+  .park_hold:hover {
+    position:absolute;
+    top:15%;
+    left:70%;
+    right:22.5%;
+    bottom:12.5%;
+    background-color:#212121;
+    border-radius:1vw;
+    color:#ff0000;
+    border:none;
+    font-size:1.5vw;
+  }
+
+  .N {
+    position:absolute;
+    top:40%;
+    left:15%;
+    right:75%;
+    bottom:40%;
+    background-color:#000000;
+    color:#ff9500;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+  }
+  
+  .N:hover {
+    position:absolute;
+    top:40%;
+    left:15%;
+    right:75%;
+    bottom:40%;
+    background-color:#212121;
+    color:#ff9500;
+    border:none;
+    font-size:1.5vw;
+  }
+
+  .D {
+    position:absolute;
+    top:20%;
+    left:15%;
+    right:75%;
+    bottom:60%;
+    background-color:#000000;
+    color:#ffffff;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+  
+  .D:hover {
+    position:absolute;
+    top:20%;
+    left:15%;
+    right:75%;
+    bottom:60%;
+    background-color:#212121;
+    color:#f9f9f9;
+    border:none;
+    font-size:1.5vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+  .R {
+    position:absolute;
+    top:60%;
+    left:15%;
+    right:75%;
+    bottom:20%;
+    background-color:#000000;
+    color:#ffffff;
+    border:none;
+    transition:0.5s;
+    font-size:1.25vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+  
+  .R:hover {
+    position:absolute;
+    top:60%;
+    left:15%;
+    right:75%;
+    bottom:20%;
+    background-color:#212121;
+    color:#f9f9f9;
+    border:none;
+    font-size:1.5vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }

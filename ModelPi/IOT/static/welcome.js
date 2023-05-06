@@ -3,7 +3,8 @@ var last_key = 'w';
 var adaptive_cruise_status = 'Disengaged';
 var cruise_status = 'Disengaged';
 var parking_brake = 'Engaged';
-var current_gear = 'N'
+var current_gear = 'N';
+var light = 'Off';
 //movement functions
 function gas(direction) {
   $.ajax({
@@ -210,37 +211,7 @@ $('.cruise').click(function(){
   }
 })
 
-$('.auto').click(function(){
-  if (cruise_status=='Disengaged') {
-    console.log("cruise control has been engaged!");
-    cruise_status = 'Engaged';
-    $('.auto').css("color","#00ff00");
-    cruise("Engaged");
-    
-  }
-  else if (cruise_status=='Engaged') {
-    console.log("cruise control has been disengaged!");
-    cruise_status = 'Disengaged';
-    $('.auto').css("color","#888a0f");
-    cruise("Disengaged");
-  }
-})
 
-$('.park_hold').click(function(){
-  if (parking_brake=='Disengaged') {
-    console.log("Adaptive cruise control has been engaged!");
-    parking_brake = 'Engaged';
-    $('.park_hold').css("color","#ff0000");
-    park("Engaged");
-    
-  }
-  else if (parking_brake=='Engaged') {
-    console.log("Adaptive cruise control has been disengaged!");
-    parking_brake = 'Disengaged';
-    $('.park_hold').css("color","#7b0f0f");
-    park("Disengaged");
-  }
-})
 
 $('.N').click(function(){
   console.log("Adaptive cruise control has been engaged!");
@@ -267,6 +238,42 @@ $('.R').click(function(){
   $('.N').css("color","#ffffff");
   $('.D').css("color","#ffffff");
   change_gear('R');
+})
+
+function HORN() {
+  $.ajax({
+    url:'',
+    tyoe:'get',
+    data:{
+      horn:'honk'
+    }
+  })
+}
+
+function LIGHT(status) {
+  $.ajax({
+    url:'',
+    tyoe:'get',
+    data:{
+      light:status
+    }
+  })
+}
+$('.light').click(function(){
+  if (light==='Off') {
+    $('.light').css("color",'#ff9500');
+    light='On';
+    LIGHT(light);
+  }
+  else if (light==='On') {
+    $('.light').css("color",'#ffffff');
+    light='Off';
+    LIGHT(light);
+  }
+})
+
+$('.Horn').click(function(){
+  HORN();
 })
 
 
